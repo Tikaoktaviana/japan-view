@@ -185,6 +185,9 @@
           background-color: rgb(255, 255, 255);
           border-radius: 2px; 
         }
+        .dropdown li a{
+          text-align: left;
+        }
         
         ul li:hover .dropdown {
           height: 135px;
@@ -285,7 +288,7 @@
   left: 0;
   height: 50px;
   width: 700px;
-  background: linear-gradient(to right, rgba(131, 82, 152, 0.8), rgba(166, 89, 198, 0.4));
+  background: rgb(208,171,215);
   border-radius: 10px;
 }
 .overlay h2{
@@ -310,11 +313,46 @@
   justify-content: space-between;
   justify-items: left;
 }
-.lingkaran1{
-  height: 25px;
-  width: 25px;
+.top4{
+  height: 30px;
+  width: 30px;
   background-color: rgb(0, 0, 0);
   background-repeat: no-repeat;
+  box-sizing: content-box;
   border-radius: 100%;
-  color:#c2b4e3;
+  color:#ffffff;
+  position: center;
+}
+.top4 a{
+  position:absolute;
+  margin-left: -8px;
+
+  margin: -5px -7px;
+}
+.list-img{
+  background-image: url(./img/thumb_shibuya.jpg);
+}
+/*baru2*/
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; 
+  margin: 10px;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+}
+.video-set {
+    width: 33%;
+    float: left;
+}
+@media (max-width:640px) {
+    .video-set {
+         width: 100%;
+         float: none;
+    }
 }
