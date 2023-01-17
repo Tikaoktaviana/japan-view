@@ -30,7 +30,6 @@
                         <img src="./img/japanview-logo.png" alt="japanview-logo">
                     </a>
                 </div>
-                <input type="menu-list" id="menu-list" aria-label="menu button">
                 <label for="menu-list"><span></span></label>
                 
                 <nav aria-label="main navigation">
@@ -93,7 +92,7 @@
                             aria-haspopup="true" 
                             aria-expanded="true" 
                             aria-controls="dropdown1">
-                            ID<span class="arrow"></span>   
+                           <div class="id">ID</div><span class="arrow"></span>   
                             </button>
                             <ul class="dropdown" id="dropdown1">
                             <li><a href="#">JP</a></li> 
@@ -105,24 +104,90 @@
               </div>
             </div>
             <div class="pattren"></div>
-               <div class="container">
-                <div class="slideshow_wrapper">
-                  <div class="slideshow">
-                    <div class="slide_one slide">
-                      <img src="./img/thumbnail-upi.jpg" />
-                    </div>
-                    
-                    <div class="slide_two slide">
-                      <img src="./img/01-1-1200x800.jpg" />
-                    </div>
-                    
-                     <div class="slide_three slide">
-                      <img class="slide_img" src="./img/1-935x800.jpg">
-                    </div>
-                  </div>
-                </div>
-               </div>
+            <div id="slider">
+              <ul id="slideWrap">
+                <li><img src="./img/01-1-1200x800.jpg" alt=""></li>
+                <li><img src="./img/1-935x800.jpg" alt=""></li>
+                <li><img src="./img/sub1.jpg" alt=""></li>
+                <li><img src="./img/thumbnail-upi.jpg" alt=""></li>
+               
+              </ul>
+              <a id="prev" href="#"></a>
+              <a id="next" href="#"></a>
+            </div>
+            
+            <div class="bg">
+              <div class="overlay">
+                <img src="./img/icon-video.png">
+                <span><h2>Video</h2></span> 
+                <div class="jalan-jalan">
+                <h2>Jalan-jalan di Tokyo</h2></div>
+              </div>
+          </div>
+          <div class="lingkaran1">
+            <p>ID</p>
+          </div>
+
+
     </div>
-    
+    <script>
+      var responsiveSlider = function() {
+  
+  var slider = document.getElementById("slider");
+  var sliderWidth = slider.offsetWidth;
+  var slideList = document.getElementById("slideWrap");
+  var count = 1;
+  var items = slideList.querySelectorAll("li").length;
+  var prev = document.getElementById("prev");
+  var next = document.getElementById("next");
+  
+  window.addEventListener('resize', function() {
+    sliderWidth = slider.offsetWidth;
+  });
+  
+  var prevSlide = function() {
+    if(count > 1) {
+      count = count - 2;
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+    else if(count = 1) {
+      count = items - 1;
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+  };
+  
+  var nextSlide = function() {
+    if(count < items) {
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+    else if(count = items) {
+      slideList.style.left = "0px";
+      count = 1;
+    }
+  };
+  
+  next.addEventListener("click", function() {
+    nextSlide();
+  });
+  
+  prev.addEventListener("click", function() {
+    prevSlide();
+  });
+  
+  setInterval(function() {
+    nextSlide()
+  }, 5000);
+  
+  };
+  
+  window.onload = function() {
+  responsiveSlider();
+  }
+  
+  
+    </script>
 </body>
 </html>
