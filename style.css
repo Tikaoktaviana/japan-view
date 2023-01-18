@@ -333,26 +333,15 @@
   background-image: url(./img/thumb_shibuya.jpg);
 }
 /*baru2*/
-.video {
+.img-youtube img{
+  height: 250px;
+  width: 400px;
+  border-radius: 15px;
+}
+.img-youtube{
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0; 
-  margin: 10px;
+  margin-left: 20px;
 }
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 200px;
-}
-.video-set {
-    width: 33%;
-    float: left;
-}
-@media (max-width:640px) {
-    .video-set {
-         width: 100%;
-         float: none;
-    }
+.jv-list-body a .jv-list-txt p{
+  margin: 200px;
 }
