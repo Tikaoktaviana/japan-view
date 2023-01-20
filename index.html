@@ -25,144 +25,26 @@
                 <a href="#Contact"> Contact </a>
              </div>
       </div>
-        <div class="top2-container">
+      <div class="top2-container">
             <nav aria-label="main navigation">
                   <div class="menu-list">
                     <div class="logo">
                         <a href="a">
-                            <img src="./img/japanview-logo.png" alt="japanview-logo">
-                        </a>
+                          <img src="./img/japanview-logo.png" alt="japanview-logo"></a>
                     </div>
-                <div class="menu-display">
-                  <ul class="menus">
-                    <li><a href="#"><img src="./img/icon-news.png" width="25px" height="25px"> News</a></li>
-                    <li>
-                        <button 
-                          type="button" 
-                          aria-haspopup="true" 
-                          aria-expanded="true" 
-                          aria-controls="dropdown1">
-                          <img src="./img/icon-feature.png" width="30px" height="25px"> Featured<span class="arrow"></span>   
-                        </button>
-                        <ul class="dropdown" id="dropdown1">
-                          <li><a href="#">Articles</a></li> 
-                          <li><a href="#">Comunity Corner</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#"><img src="./img/icon-learn-japanese.png" width="30px" height="25px"> Learn Japanese</a></li>
-                      <li>
-                        <button 
-                          type="button" 
-                          aria-haspopup="true" 
-                          aria-expanded="true" 
-                          aria-controls="dropdown1">
-                          <img src="./img/icon-school.png" width="30px" height="25px"> Study<span class="arrow"></span>   
-                        </button>
-                        <ul class="dropdown" id="dropdown1">
-                          <li><a href="#">University</a></li> 
-                          <li><a href="#">Junior College</a></li>
-                          <li><a href="#">Vocational School</a></li>
-                          <li><a href="#">Japanese Language School</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <button 
-                          type="button" 
-                          aria-haspopup="true" 
-                          aria-expanded="true" 
-                          aria-controls="dropdown1">
-                          <img src="./img/icon-map.png" width="30px" height="30px"> Experience & Location<span class="arrow"></span>   
-                        </button>
-                        <ul class="dropdown" id="dropdown1">
-                          <a href="Experience"> Experience </a>
-                          <li><a href="#">Museum</a></li> 
-                          <li><a href="#">Art Museum</a></li>
-                          <li><a href="#">Zoo</a></li>
-                          <li><a href="#">Aquarium</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#"> <img src="./img/icon-video.png" width="30px" height="25px"> Videos</a></li>
-                      <div class="icons">
-                        <img src="./img/icon_instagram_color.png">
-                      </div>
-                     <div class="id">
-                        <li>
-                            <button 
-                            type="button" 
-                            aria-haspopup="true" 
-                            aria-expanded="true" 
-                            aria-controls="dropdown1">
-                           <div class="top4">
-                            <a>ID</a></div>
-                           <span class="arrow"></span>   
-                            </button>
-                            <ul class="dropdown" id="dropdown1">
-                            <li><a href="#">JP</a></li> 
-                            <li><a href="#">ID</a></li> 
-                            </ul>
-                         </li>
-                     </div>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-            <div class="pattren"></div>
-            
-            <div class="container"> 
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-            
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="./img/01-1-1200x800.jpg" alt="" style="width:900px;"height="400px">
-                  </div>
-            
-                  <div class="item">
-                    <img src="./img/1-935x800.jpg" alt=""  style="width:900px;",height="400px">
-                  </div>
-                
-                  <div class="item">
-                    <img src="./img/thumbnail-upi.jpg" alt=""  style="width:900px;", height="400px">
-                  </div>
-                </div>
-                <div class="dot">
-                  <div class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </div>
-                </div> 
-              </div>
-            </div>
+      
 
-          
+        
+
+
+
+
+
+
+
+
     </div>
 
-    <script>
-      var slideIndex = 0;
-      showSlides();
-      
-      function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex> slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-      </script>
     
-
-
 </body>
 </html>
