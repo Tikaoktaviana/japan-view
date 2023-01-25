@@ -178,7 +178,7 @@ li:focus-within > button > .arrow {
 .top2-container{
   position: static;
   visibility: visible;
-  background: rgb(105, 25, 25);
+  background: rgb(255, 255, 255);
   background-size: cover;
   display: flex;
   height: 80px;
@@ -204,7 +204,7 @@ li:focus-within > button > .arrow {
   margin-top: -50px;
   display: flex;
   margin-left: 700px;
-  background-color: #000000;
+  background-color: #ffffff;
 
   }
   
@@ -385,7 +385,7 @@ li:focus-within > button > .arrow {
 }
 /**profil Riku **/
 .profile-popup {
-    background-image: linear-gradient(#8823fc, #b246e4);
+    background-image: linear-gradient(#baa7e5, #d290f1);
     color: #fff;
     cursor: pointer;
     margin: 0 50px;
@@ -474,13 +474,289 @@ li:focus-within > button > .arrow {
   width: 110px;
   height: 33px;
   margin-left: 220px;
+  margin-top: -10px
 }
 .see-more a{
   color: #ffffff;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   margin-left: 2px;
+
 }
 .see-more :hover{
   color: #bc24d0;
+}
+.box-container{
+  margin-top: -40px;
+}
+/** news **/
+.news{
+    background-image:url(./img/box-news.png);
+    background-repeat: no-repeat;
+    color: #fff;
+    margin: 0 50px;
+    padding: 8px 15px;
+    font-size: 14px;
+    position: relative;
+    height: 50px;
+    width: 1000px;
+    margin-left: 220px;
+    margin-top: 5px;
+}
+.box-news {
+    color: #ffffff;
+    background: url(./img/icon-news-white.png) no-repeat left center;
+    background-size: auto;
+    padding: 0 50px;
+    margin-top: -17px;
+}
+.box-news h2{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.see-more-news{
+  background-color: #577faf;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  position: relative;
+  width: 110px;
+  height: 33px;
+  margin-left: -15px;
+}
+.see-more-news a{
+  color: #ffffff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+  margin-left: 2px;
+
+}
+.see-more-news :hover{
+  color: #bc24d0;
+}
+.news-list-date p{
+  color: #000000;
+}
+/** news item **/
+.jv-list.list-news {
+  display: block;
+  margin-bottom: 25px;
+}
+.jv-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+
+}
+.jv-list.list-news .jv-list-item {
+  align-items: center;
+  border: none;
+}
+.jv-list.list-news .jv-list-item {
+    align-items: center;
+    border: none;
+}
+.jv-list-item {
+    margin: 0 0 16px;
+    border: 2px solid #333;
+    flex: 0 0 calc(33.33% - 16px);
+}
+.jv-list.list-news .jv-list-item {
+  align-items: center;
+  border: none;
+}
+
+.jv-list.list-news .jv-list-item {
+  align-items: center;
+  border: none;
+}
+
+.jv-list.list-news .jv-list-date {
+  width: 100px;
+  flex-shrink: 0;
+}
+.jv-list-date {
+  border: none;
+  font-family: 'HiraKakuStdNW3', sans-serif;
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+  padding: 0;
+}
+.jv-list-txt {
+  padding: 0 0 0 12px;
+}
+.jv-list.list-news .jv-list-txt p {
+  margin: 0;
+  padding: 0;
+}
+.jv-list-txt p {
+  padding: 0 0 8px;
+}
+.jv-list-body {
+  display: flex;
+}
+
+/**Articles**/
+.articles{
+  background-image:url(./img/box-articel.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  margin: 0 50px;
+  padding: 8px 15px;
+  font-size: 14px;
+  position: relative;
+  height: 50px;
+  width: 1500px;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+.box-articles {
+  color: #ffffff;
+  background: url(./img/icon-feature-white.png) no-repeat left center;
+  background-size: auto;
+  padding: 0 50px;
+  margin-top: -17px;
+}
+.box-articles h2{
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/** *Articles-body **/
+.jv-list.list-feature .jv-list-item {
+  flex: 0 0 calc(50% - 16px);
+  display: flex;
+  border: none;
+  margin: 0 0 25px;
+}
+.jv-list-item {
+  margin: 0 0 16px;
+  border: 2px solid #333;
+  flex: 0 0 calc(33.33% - 16px);
+}
+
+.jv-list.list-feature .jv-list-body {
+    flex-direction: column;
+    padding: 5px 0;
+}
+.jv-list-body {
+    display: flex;
+    padding: 16px;
+}
+
+
+.jv-list.list-feature .jv-list-img {
+  width: 120px;
+  flex-shrink: 0;
+  margin-right: 15px;
+
+}
+.jv-list.list-feature .jv-list-img a {
+  height: 120px;
+  border-radius: 5px;
+}
+.jv-list-img a {
+  display: block;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  animation-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.jv-list-img {
+    overflow: hidden;
+}
+
+.excerpt {
+    display: block;
+    font-weight: 500;
+    color:#4b4747;
+}
+.jv-list-faci {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul {
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.jv-list-date {
+    border: none;
+    font-family: 'HiraKakuStdNW3', sans-serif;
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
+    padding: 0;
+}
+
+
+.jv-list.list-feature .jv-list-date {
+    order: 2;
+}
+.jv-list-date {
+    border: none;
+    font-family: 'HiraKakuStdNW3', sans-serif;
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
+    padding: 0;
+}
+.jv-list-date {
+    font-family: 'Karla', sans-serif;
+    padding: 0 12px 0 0;
+}
+.jv-list-date p {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.jv-list.list-feature .jv-list-txt p {
+    margin: 0;
+}
+.jv-list-txt p {
+    padding: 0 0 8px;
+}
+.jv-list.list-feature .jv-list-txt {
+    order: 1;
+    padding: 0;
+}
+.id_ID .excerpt {
+    font-weight: 400 !important;
+}
+/** >Learn Japanese **/
+.learn-japanese{
+  background-image:url(./img/box-pattrent.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  margin: 0 50px;
+  padding: 8px 15px;
+  font-size: 14px;
+  position: relative;
+  height: 50px;
+  width: 1200px;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+.box-learn-japanese {
+  color: #ffffff;
+  background: url(./img/icon-learn-japanese.png) no-repeat left center;
+  background-size: auto;
+  padding: 0 50px;
+  margin-top: -17px;
+}
+.box-learn-japanese h2{
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.box-learn-japanese-container{
+  max-width: 1000px;
+  width: 200px;
+}
+.jv-wrapper-feature {
+  padding: 0 0 0;
 }
