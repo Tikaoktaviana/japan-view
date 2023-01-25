@@ -181,10 +181,16 @@ li:focus-within > button > .arrow {
   background: rgb(255, 255, 255);
   background-size: cover;
   display: flex;
-  height: 80px;
-  transform: initial;
-  border:3px solid #0382b4;
-  justify-content:center;
+
+}
+.dropdown img{
+  height: 25px;
+  width: 25px;
+}
+.navbar .dropdown{
+  justify-items: end;
+  display: block;
+
 
 }
 
@@ -243,7 +249,6 @@ li:focus-within > button > .arrow {
     transform: rotate(-225deg);
     margin-top: 4px;
   }
-}
 .top2-container{
   justify-content: space-between;
 }
@@ -486,6 +491,7 @@ li:focus-within > button > .arrow {
 .see-more :hover{
   color: #bc24d0;
 }
+<<<<<<< HEAD
 .box-container{
   margin-top: -40px;
 }
@@ -760,3 +766,6 @@ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .jv-wrapper-feature {
   padding: 0 0 0;
 }
+=======
+>>>>>>> 6ead737ac032fdec7c79d7ab02d128053fc8cf60
+>>>>>>> 0a4f18b647d36c7231236f68f05800d525b592c5
