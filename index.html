@@ -36,28 +36,44 @@
                 <nav aria-label="main navigation">
                   <ul class="menus">
 
-                    <li><a href="#"><img src="./img/icon-news.png"> News</a></li>
+                    <li>
+                      <button 
+                        type="button" 
+                        aria-haspopup="true" 
+                        aria-expanded="true" 
+                        aria-controls="dropdown1">
+                        <img src="./img/icon-news.png"><span class="news-nav">News</span><span class="arrow"></span>   
+                     </button>
+                    </li>
                     <li>
                         <button 
                           type="button" 
                           aria-haspopup="true" 
                           aria-expanded="true" 
                           aria-controls="dropdown1">
-                          <img src="./img/icon-feature.png"> Featured<span class="arrow"></span>   
+                          <img src="./img/icon-feature.png"><span class="featured">Featured</span><span class="arrow"></span>   
                         </button>
                         <ul class="dropdown" id="dropdown1">
                           <li><a href="#">Articles</a></li> 
                           <li><a href="#">Comunity Corner</a></li>
                         </ul>
                       </li>
-                      <li><a href="#"><img src="./img/icon-learn-japanese.png">Learn Japanese</a></li>
                       <li>
                         <button 
                           type="button" 
                           aria-haspopup="true" 
                           aria-expanded="true" 
                           aria-controls="dropdown1">
-                          <img src="./img/icon-school.png"> Study<span class="arrow"></span>   
+                          <img src="./img/icon-learn-japanese.png"><span class="learn-japanese-nav">Learn Japanese</span><span  class="arrow"></span>   
+                        </button>
+                      </li>
+                      <li>
+                        <button 
+                          type="button" 
+                          aria-haspopup="true" 
+                          aria-expanded="true" 
+                          aria-controls="dropdown1">
+                          <img src="./img/icon-school.png"><span class="study">Study</span><span  class="arrow"></span>   
                         </button>
                         <ul class="dropdown" id="dropdown1">
                           <li><a href="#">University</a></li> 
@@ -72,7 +88,7 @@
                           aria-haspopup="true" 
                           aria-expanded="true" 
                           aria-controls="dropdown1">
-                          <img src="./img/icon-map.png">Experience & Location<span class="arrow"></span>   
+                          <img src="./img/icon-map.png"><span class="experiencelocation">Experience & Location</span><span class="arrow"></span>   
                         </button>
                         <ul class="dropdown" id="dropdown1">
                           <li><a href="#">Museum</a></li> 
@@ -311,13 +327,13 @@
                 </div>
 
                 <div class="jv-list-item">
-                              <div class="jv-list-img"> <a href="https://japanview.tv/id/learn_japanese/19720/" style="background-image:url(https://japanview.tv/wp-content/uploads/2022/12/thum-unsada.png)"></a> </div>
-                              <div class="jv-list-body"> 
+                  <div class="jv-list-img"> <a href="https://japanview.tv/id/learn_japanese/19720/" style="background-image:url(https://japanview.tv/wp-content/uploads/2022/12/thum-unsada.png)"></a> </div>
+                  <div class="jv-list-body"> 
                     <div class="jv-list-date">
                       <p>2022.12.19</p>
                     </div>
                     <div class="jv-list-txt">
-                                      <p><a href="https://japanview.tv/id/learn_japanese/19720/">
+                      <p><a href="https://japanview.tv/id/learn_japanese/19720/">
                         Universitas Darma Persada  </a>
                         <span class="excerpt">
                       </span>
@@ -345,9 +361,14 @@
                   </div>
                 </div>
               </div>
+              <div class="experience-container">
                 <div class="jv-wrapper-odekake">
                   <div class="jv-wrapper-title title-odekake">
-                    <h2>Experience <span>Memperkenalkan Tempat Wisata di Jepang</span></h2>
+                    <div class="experience">
+                      <div class="box-experience">
+                        <h2>Experience <span>Memperkenalkan Tempat Wisata di Jepang</span></h2>
+                      </div>
+                    </div>
                   </div> 
                   <div class="jv-wrapper-title-secondary">
                     <h3><span>Museum</span><span class="catch">Ingin Pergi dan Lihat!</span>
@@ -429,7 +450,8 @@
                       </div>
                     </div>
                   </div>    
-                </div>   
+                </div>  
+              </div> 
                 
                   
 
