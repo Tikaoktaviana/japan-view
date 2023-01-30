@@ -167,7 +167,7 @@ li:focus-within > button > .arrow {
 
 /* MEDIA QUERIES  */
 @media (min-width: 640px) {
-  
+}  
   .header-content {
     display: flex;
   }
@@ -202,15 +202,18 @@ li:focus-within > button > .arrow {
 }
 
 .menus {
-  position: static;
+  position: relative;
   visibility: visible;
-  display: flex;
   height: 50px;
   transform: initial;
-  margin-top: -50px;
+  margin-top: -110px;
   display: flex;
-  margin-left: 700px;
-  background-color: #000000;
+  background-color: #35c3dc;
+  background-size: cover;
+  padding-left: auto;
+  max-width: 1440px;
+  justify-content: space-between;
+
 
   }
   
@@ -230,15 +233,13 @@ li:focus-within > button > .arrow {
   
   .dropdown {
     position: absolute;
-    right: 10px;
-    left: auto;
-    box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
-    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+    right: 5px;
+    left: 0;
     z-index: 99;
     min-width: 10rem;
     padding: 0;
     background-color: rgb(255, 255, 255);
-    border-radius: 0 0 0.5rem 0.5rem; 
+    display: block;
   }
   
   ul li:hover .dropdown {
@@ -489,4 +490,4 @@ li:focus-within > button > .arrow {
 .see-more :hover{
   color: #bc24d0;
 }
->>>>>>> 6ead737ac032fdec7c79d7ab02d128053fc8cf60
+
