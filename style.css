@@ -939,3 +939,7 @@ width: 70%;
   flex-shrink: 0;
   margin-right: 15px;
 }
+.jv-list-txt .jv-wrapper-title-secondary{
+  display: flex;
+  justify-content: space-between;
+}
