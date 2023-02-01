@@ -974,6 +974,7 @@ img {
   color: #333;
   font-family: 'Karla', 'HiraKakuStdNW6', sans-serif;
   font-size: 16px;
+  max-width: 1200px;
 }
 .id_ID .jv-footer-menu li, .id_ID .jv-footer-menu li:not(:first-child) ul {
   font-family: 'Karla', sans-serif !important;
